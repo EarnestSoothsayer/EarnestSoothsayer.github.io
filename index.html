@@ -3,13 +3,67 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Podróże</title>
-
+		<style>
+			body{
+				background-color: powderblue;
+			}
+			
+			div.box{
+				background-color: black;
+				border-radius: 6px;
+				padding: 5px;
+				text-align: center;
+				color: white;
+				margin: auto;
+				width: 50%;
+			}
+			
+			button{
+				color: blue;
+				border: 3px solid red;
+				background-color: powderblue;
+				text-decoration: underline;
+				border-radius: 3px;
+				padding: 4px;
+			}
+			
+			button:hover{
+				color: red;
+				border: 3px solid blue;
+				background-color: gray;
+				text-decoration: underline;
+				border-radius: 3px;
+				padding: 4px;
+			}
+			
+			button:active{
+				color: white;
+				border: 3px solid orange;
+				background-color: gray;
+				text-decoration: underline;
+				border-radius: 3px;
+				padding: 4px;
+			}
+			
+			h1, h2, h3, h4, h5, h6{
+				text-align: center;
+				background-color: black;
+				color: white;
+				border: 8px solid red;
+				border-radius: 6px;
+				padding: 6px;
+				margin: auto;
+				width: 75%;
+			}
+		</style>
 	</head>
-	<body id="bodyBackground"> 
+	<body> 
 		
-		<h1> Tu będą znajdowały się odnośniki do kolejnych zadań</h1>
+		<h2>Na tej stronie będą znajdowały się odnośniki do kolejnych zadań</h2>
 		
-		<a href="travel/travel.html"> podróże </a>
-		
+		<br/><div class="box">
+			<p><button type="button" onclick="alert('Kot mi wszedł na biurko :-/'); window.location.href='travel/travel.html'">Podróże</button></p>
+			<p><button type="button" onclick="alert('Kupiłem lampę solną se, dobra jest ;-)'); window.location.href='music/muzykaBright.html'">Muzyka jest dobra na wszystko</button></p>
+		</div>
 	</body>
 </html>
